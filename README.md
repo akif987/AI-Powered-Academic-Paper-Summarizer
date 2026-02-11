@@ -22,7 +22,7 @@ A production-ready RAG (Retrieval-Augmented Generation) web application for summ
 | Migrations | Alembic |
 | PDF Parsing | PyMuPDF |
 | Embeddings | Google Gemini (`gemini-embedding-1.0`) |
-| Generation | Google Gemini (`gemini-1.5-flash`) |
+| Generation | Google Gemini (`gemini-3-flash`) |
 | Compression | ScaleDown API |
 
 ## Prerequisites
@@ -167,7 +167,7 @@ pytest tests/test_chunking.py -v
 | `CHUNK_OVERLAP` | 50 | Overlap tokens between chunks |
 | `TOP_K_CHUNKS` | 5 | Chunks to retrieve per query |
 | `GEMINI_EMBEDDING_MODEL` | gemini-embedding-1.0 | Embedding model |
-| `GEMINI_GENERATION_MODEL` | gemini-1.5-flash | Generation model |
+| `GEMINI_GENERATION_MODEL` | gemini-3-flash | Generation model |
 | `EMBEDDING_BATCH_SIZE` | 10 | Chunks per batch (rate limiting) |
 
 ## Architecture
